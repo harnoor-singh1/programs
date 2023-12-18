@@ -1,0 +1,14 @@
+package com.company;
+
+import java.sql.SQLOutput;
+
+public class variable {
+    public static void main(String[] args) {
+        int a = 9;
+        int b = 18;
+
+        int sum = a + b;
+        System.out.println(" the sum of the numbers are:");
+        System.out.println(sum);
+    }
+}
