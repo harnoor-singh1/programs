@@ -1,0 +1,19 @@
+package com.company;
+
+public class incredecre {
+    public static void main(String[] args) {
+        int number = 10;
+        //Increment
+        System.out.println("Original value: " + number);
+        //number++;  //Increment by 1
+
+        //System.out.println("After Increment:" + number);
+
+
+        number--; //Decrement by 1
+        System.out.println("After Decrement:" + number);
+
+
+
+    }
+}
