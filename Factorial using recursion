@@ -1,0 +1,30 @@
+package com.company;
+import java.util.Scanner;
+
+public class Hrecursion {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter any non-negative integer:");
+        int number = sc.nextInt();
+
+
+        if (number<0){
+            System.out.println("Please enter non negative number");
+        }
+        else{
+            long factorial = calculate_Factorial(number);
+            System.out.println("factorial of " +number+ "is:" +factorial);
+        }
+        sc.close();
+    }
+
+    public static long calculate_Factorial(int n){
+        if (n==0 || n==1){
+            return 1;
+        }
+        else{
+            return n * calculate_Factorial(n-1);
+        }
+    }
+    }
