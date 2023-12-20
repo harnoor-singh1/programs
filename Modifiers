@@ -1,0 +1,19 @@
+package com.company;
+
+class Employee{
+    public int id;
+    public String name;
+}
+
+public class Hmodiffiers {
+    public static void main(String[] args) {
+        Employee emp1 = new Employee();
+        emp1.id = 3;
+        emp1.name ="Shubham";
+
+        System.out.println(emp1.id);
+        System.out.println(emp1.name);
+    }
+
+
+}
