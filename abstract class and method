@@ -1,0 +1,25 @@
+package com.company;
+abstract class bird{ // abstract class
+    public abstract void animalsound(); //abstract method
+    public void sleep(){ // regular method
+        System.out.println("ZZZZ");
+
+    }
+}
+
+ class crow  extends  bird{ // subclass (inherit from bird)
+    public void animalsound(){
+        System.out.println("The crow says: kaw kaw");
+    }
+
+}
+
+
+public class HAbst {
+    public static void main(String[] args) {
+        crow mycrow = new crow();
+
+        mycrow.animalsound();
+        mycrow.sleep();
+    }
+}
