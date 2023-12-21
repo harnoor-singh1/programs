@@ -1,0 +1,32 @@
+package com.company;
+
+class worker{
+    private int id;
+    private String name;
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String n){
+        name = n;
+    }
+    public void setId(int i){
+        id = i;
+    }
+    public int getId(){
+        return id;
+    }
+}
+
+public class HgetterSetters {
+    public static void main(String[] args) {
+
+        worker work1 = new worker();
+        work1.setName("Ajit Singh");
+        System.out.println(work1.getName());
+
+        work1.setId(3);
+        System.out.println(work1.getId());
+    }
+}
