@@ -1,0 +1,21 @@
+package com.company;
+
+class Vehicle{
+    protected String brandd = "Ford";  //vehicle attribute
+    public void honk(){  // vehicle method
+        System.out.println("Tu tu");
+    }
+}
+
+class car extends Vehicle{
+    public String modelName = "Mustang"; // car attribute
+}
+public class Hinheritance {
+    public static void main(String[] args) {
+        car mycar = new car();
+
+        mycar.honk();
+
+        System.out.println(mycar.brandd + " " + mycar.modelName);
+    }
+}
