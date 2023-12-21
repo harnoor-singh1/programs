@@ -1,0 +1,37 @@
+package com.company;
+
+
+
+class animal{
+    void sound(){
+        System.out.println("Animal makes a sound");
+    }
+
+}
+
+class dog extends animal {
+    void sound(){
+        System.out.println("Dog barks");
+    }
+}
+
+class cat extends animal{
+    void sound(){
+        System.out.println("cat meows");
+    }
+}
+
+
+public class Hdynamicdispatch {
+    public static void main(String[] args) {
+        animal a;
+         a = new animal();
+         a.sound(); // calls the sound method
+
+         a = new dog();
+         a.sound(); // calls the overridden method of dog class
+
+         a = new cat();
+         a.sound(); // callls the overridden method of cat class
+    }
+}
