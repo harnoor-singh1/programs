@@ -1,25 +1,26 @@
 package com.company;
 
-class employee{
-    //First constructor
-    employee(String s , int i){
-        System.out.println("The name of the first worker is:" +s);
-        System.out.println("The id of the first worker is: " +i);
+class Worker {
+    // First constructor
+    Worker(String s, int i){
+        System.out.println("The name of the first employee is : " + s);
+        System.out.println("The id of the first employee is : " + i);
+    }
+    //    Constructor overloaded
+    Worker(String s, int i, int salary){
+        System.out.println("The name of the second employee is : " + s);
+        System.out.println("The id of the second employee is : " + i);
+        System.out.println("The salary of second employee is : " + salary);
+    }
 
-    }
-    //constructor overload
-    employee(String s,int i, int salary){
-        System.out.println("The name of the second worker is:" +s);
-        System.out.println("The id of the second worker is:" +i);
-        System.out.println("The salary of the second worker is:" +salary);
-    }
 }
-
 public class HConstOverload {
     public static void main(String[] args) {
-        employee shubham = new employee("shubham", 201);
-        employee harry = new employee ("harry" , 202, 7000);
+        Worker shubham = new Worker("Shubham",1);
+        Worker harry = new Worker("Harry",2,70000);
+
 
 
     }
 }
+
